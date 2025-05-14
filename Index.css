@@ -1,0 +1,152 @@
+/* Container */
+#output {
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    background-color: #fafafa;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Sygeplejerske sektion */
+  #output > div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 16px 24px;
+  }
+  
+  /* Overskrift */
+  #output h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  /* Patientliste */
+  #output ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  /* Patientelement */
+  #output li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Farvekodning – beholdes */
+  #output li[style*="lightgreen"] {
+    background-color: #d3f9d8 !important;
+  }
+  
+  #output li[style*="lightcoral"] {
+    background-color: #ffe3e3 !important;
+  }
+  
+  /* Hover-effekt */
+  #output li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Evt. badge for EWS eller plejetid */
+  .badge {
+    background-color: #ddd;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 40px 20px;
+    line-height: 1.6;
+  }
+  
+  /* Overskrift til hver sygeplejerske */
+  h3 {
+    font-size: 20px;
+    color: #1a1a1a;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    border-left: 4px solid #007bff; /* blå indikator */
+    padding-left: 10px;
+    font-weight: 600;
+  }
+  
+  /* Liste over patienter */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Patientelementer */
+  li {
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Hover-effekt */
+  li:hover {
+    background-color: #f1f1f1;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  button {
+    background-color: #1976d2;
+    color: white;
+    font-size: 16px;               /* Større tekst */
+    font-weight: 600;              /* Gør teksten tydeligere */
+    padding: 16px 40px;            /* Mere plads i og omkring knappen */
+    border: none;
+    border-radius: 8px;            /* Lidt rundere hjørner */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtil skygge for dybde */
+}
+
+/* Hover-effekt for knappen */
+button:hover {
+    background-color: #1565c0;
+    transform: scale(1.06); /* En anelse mere forstørrelse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Aktiv tilstand */
+button:active {
+    background-color: #0d47a1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* Fokus-effekt */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(25, 118, 210, 0.4);
+}

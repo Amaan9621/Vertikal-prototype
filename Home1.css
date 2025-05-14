@@ -1,0 +1,117 @@
+/* Grundlæggende styling for body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+header {
+    background-color: #1976d2;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Grid container for Sygeplejersker og Patienter */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner */
+    gap: 2rem;
+}
+
+.nurse-section, .patient-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Overskrifter */
+h2 {
+    font-size: 1.8rem;
+    color: #1976d2;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #1976d2;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+/* Kort (card) styling til hver sygeplejerske og patient */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap; /* Gør det responsivt ved mindre skærme */
+}
+
+.card p:not(:last-child)::after {
+    content: "|";
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #999;
+}
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Container for knappen */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+/* Flot og større knap */
+button {
+    background-color: #1976d2;
+    color: white;
+    font-size: 20px;               /* Større tekst */
+    font-weight: 600;              /* Gør teksten tydeligere */
+    padding: 16px 40px;            /* Mere plads i og omkring knappen */
+    border: none;
+    border-radius: 8px;            /* Lidt rundere hjørner */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtil skygge for dybde */
+}
+
+/* Hover-effekt for knappen */
+button:hover {
+    background-color: #1565c0;
+    transform: scale(1.06); /* En anelse mere forstørrelse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Aktiv tilstand */
+button:active {
+    background-color: #0d47a1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* Fokus-effekt */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(25, 118, 210, 0.4);
+}
